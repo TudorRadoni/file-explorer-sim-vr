@@ -6,19 +6,28 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: '',
+			logo: {
+				src: '/src/assets/FESimVR-logo-landscape.png', // Path to the image in the src/assets folder
+				alt: 'File Explorer Simulator VR Logo', // Alt text for accessibility
+			},
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/TudorRadoni' }],
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Setup and Planning',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: 'Environment Setup', slug: 'setup-and-planning/setup-environment' },
+						{ label: 'Create the Project', slug: 'setup-and-planning/create-ue-project' },
+						{ label: "Modify the VR Template", slug: 'setup-and-planning/mod-vr-template' },
 					],
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'Docs Guide',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'Getting Started with the Docs', slug: 'docs-guides/getting-started-with-docs' },
+					],
 				},
 			],
 		}),
