@@ -11,7 +11,10 @@ export default defineConfig({
 				src: '/src/assets/FESimVR-logo-landscape.png', // Path to the image in the src/assets folder
 				alt: 'File Explorer Simulator VR Logo', // Alt text for accessibility
 			},
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/TudorRadoni' }],
+			social: [
+				{ icon: 'discord', label: 'Discord', href: 'https://discord.com/' },
+				{ icon: 'github', label: 'GitHub', href: 'https://github.com/TudorRadoni' },
+			],
 			sidebar: [
 				// {
 				// 	label: 'Docs Guide',
