@@ -13,6 +13,13 @@ export default defineConfig({
 			},
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/TudorRadoni' }],
 			sidebar: [
+				// {
+				// 	label: 'Docs Guide',
+				// 	items: [
+				// 		// Each item here is one entry in the navigation menu.
+				// 		{ label: 'Getting Started with the Docs', slug: 'docs-guides/getting-started-with-docs' },
+				// 	],
+				// },
 				{
 					label: 'Setup and Planning',
 					items: [
@@ -23,12 +30,22 @@ export default defineConfig({
 					],
 				},
 				{
-					label: 'Docs Guide',
+					label: 'Movement and Input',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Getting Started with the Docs', slug: 'docs-guides/getting-started-with-docs' },
+						{ label: 'Setup the Thumbstick Movement', slug: 'movement-and-input/create-the-controls' },
+						{ label: 'Modify the VR Pawn', slug: 'movement-and-input/modify-vr-pawn' },
+						{ label: 'Apply the Movement', slug: 'movement-and-input/apply-movement' },
+						{ label: 'Sprinting System', slug: 'movement-and-input/sprint-system' },
 					],
 				},
+				{
+					label: 'Reference',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'Delta Time', slug: 'reference/delta-time' },
+					],
+				}
 			],
 		}),
 	],
